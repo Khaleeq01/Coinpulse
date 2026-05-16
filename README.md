@@ -1,85 +1,83 @@
-# Coinpulse
+# CoinPulse 🚀
 
-A modern cryptocurrency tracking and analytics application built with Next.js.
+CoinPulse is a modern, fast, and interactive cryptocurrency tracking web application. Built with Next.js, it provides real-time market data, interactive OHLC charts, and a seamless user experience to help you stay on top of the crypto markets.
 
-## Getting Started
+## ✨ Features
+
+- **Real-Time Crypto Tracking:** Up-to-date market data, prices, and trends powered by the CoinGecko API.
+- **Interactive Charts:** Beautiful and responsive OHLC and line charts built with Lightweight Charts.
+- **Global Search (Cmd/Ctrl + K):** Quickly search and navigate to any cryptocurrency with a unified command menu.
+- **Modern UI:** A clean, accessible, and highly customizable interface built with Shadcn UI and Tailwind CSS.
+- **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
+
+## 🛠️ Tech Stack
+
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Language:** TypeScript
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Shadcn UI](https://ui.shadcn.com/) (Radix UI, CMDK, Lucide React)
+- **Charts:** [Lightweight Charts](https://tradingview.github.io/lightweight-charts/)
+- **Data Provider:** [CoinGecko API](https://www.coingecko.com/en/api)
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally on your machine.
 
 ### Prerequisites
-- Node.js 18+ 
-- npm, yarn, pnpm, or bun
+
+Make sure you have [Node.js](https://nodejs.org/) (version 18 or higher) and `npm`, `yarn`, or `pnpm` installed.
 
 ### Installation
 
-First, clone the repository and install dependencies:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Khaleeq01/coinpulse.git
+   cd coinpulse
+   ```
 
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-# or
-bun install
-```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-### Running the Development Server
+3. **Set up environment variables:**
+   Create a `.env.local` file in the root of your project and add your CoinGecko API credentials:
 
-Start the development server:
+   ```env
+   COINGECKO_BASE_URL=https://api.coingecko.com/api/v3
+   COINGECKO_API_KEY=your_coingecko_api_key_here
+   NEXT_PUBLIC_COINGECKO_API_KEY=your_coingecko_api_key_here
+   NEXT_PUBLIC_COINGECKO_WEBSITE_URL=wss://stream.coingecko.com/v1
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
+5. **Open the app:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
 
-The page auto-updates as you edit files. You can start editing the page by modifying `app/page.tsx`.
+## 📁 Project Structure
 
-## Project Structure
+- `app/` - Next.js App Router pages, layouts, and API routes.
+- `components/` - Reusable UI components including Shadcn UI elements and charts.
+- `lib/` - Utility functions and helpers.
+- `hooks/` - Custom React hooks for data fetching and state management.
+- `public/` - Static assets like images and icons.
 
-This project uses:
-- **Next.js** - React framework for production
-- **App Router** - Modern Next.js routing
-- **TypeScript** - Type-safe development
-- **next/font** - Automatic font optimization with Geist
+## 🤝 Contributing
 
-## Features
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/coinpulse/issues) if you want to contribute.
 
-- Real-time cryptocurrency data tracking
-- Interactive analytics and charts
-- Responsive design for all devices
-- Fast performance with Next.js optimization
+## 📄 License
 
-## Building for Production
-
-```bash
-npm run build
-npm run start
-```
-
-## Learn More
-
-- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
-- [Learn Next.js](https://nextjs.org/learn) - Interactive Next.js tutorial
-- [Next.js GitHub Repository](https://github.com/vercel/next.js) - Feedback and contributions welcome
-
-## Deployment
-
-### Deploy on Vercel
-
-The easiest way to deploy your Next.js app is on the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
-
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+This project is licensed under the MIT License.
